@@ -7,6 +7,10 @@
 .reveal {
   color: black;
 
+  a {
+    color: black;
+  }
+
   .footer {
     position: absolute;
     bottom: 1em;
@@ -15,7 +19,9 @@
   }
 
   .slides {
+
     h1, h2 {
+      text-shadow: 0 0 5px #FFF;
       color: black;
     }
 
@@ -23,15 +29,13 @@
       h1, h2 {
         color: white;
       }
-      color: white;
-      p {
-        background-color: rgba(0, 0, 0, .6);
-      }
     }
 
-    section p,
     section div {
       background-color: rgba(255, 255, 255, .6);
+      border-radius: 5px;
+      box-shadow: 0 0 5px #000;
+      padding: 1ex;
     }
 
     .ref {
