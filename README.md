@@ -1,2 +1,2 @@
-# earth-presentation
-Presentation about life using Reveal.js
+# Vegan FAQ 
+Presentation using Reveal.js
