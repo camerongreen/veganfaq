@@ -36,7 +36,7 @@ module.exports = function(grunt) {
     copy: {
       build: {
         cwd: './',
-        src: [ 'css/*' , 'images/*' ],
+        src: [ 'css/*'],
         dest: 'dist',
         expand: true
       },
@@ -49,6 +49,16 @@ module.exports = function(grunt) {
             'bower_components/reveal.js/css/theme/night.css'
           ]
         }
+      }
+    },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: './',                   // Src matches are relative to this path
+          src: ['images/**/*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: 'dist/'                  // Destination path prefix
+        }]
       }
     },
     uglify: {
@@ -67,13 +77,15 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-processhtml');
 
-  grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'uglify', 'processhtml', 'copy']);
+  grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'newer:imagemin', 'uglify', 'processhtml', 'copy']);
 };
