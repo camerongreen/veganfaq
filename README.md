@@ -1,2 +1,13 @@
-# Vegan FAQ 
-Presentation using Reveal.js
+# VeganFAQ
+
+## Install
+
+npm install
+
+## Run
+
+npm run
+
+## Build
+
+npm run build

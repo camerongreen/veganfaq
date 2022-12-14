@@ -1,331 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" />
-  <!-- build:css veganfaq.min.css -->
-  <link rel="stylesheet" href="./bower_components/reveal.js/css/reveal.css"/>
-  <link rel="stylesheet" href="./bower_components/reveal.js/css/theme/night.css" id="theme"/>
-  <!-- /build -->
-  <link href="./css/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-  <link href="./css/print.css" media="print" rel="stylesheet" type="text/css"/>
-  <!--[if IE]>
-  <link href="./css/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-  <![endif]-->
-  <title>VeganFAQ - Cameron Green</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/simple.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
 <body>
 <div class="reveal">
-  <div class="slides">
-    <section data-background-image="./images/collage.png" id="home">
-      <h1>VeganFAQ</h1>
-    </section>
+    <div class="slides">
+        <section data-background-image="./images/collage.png" id="home">
+            <h1>VeganFAQ</h1>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="protein">
-      <section>
-        <h2>Where do you get your Protein?</h2>
-        <div>
-          Answers below.
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>Protein per 100gs</th>
-            </tr>
-            <tr>
-              <td>Seitan</td>
-              <td class="right-align">74.9g</td>
-            </tr>
-            <tr>
-              <td>TVP - soy mince</td>
-              <td class="right-align">50g</td>
-            </tr>
-            <tr>
-              <td>Tempeh</td>
-              <td class="right-align">23.2g</td>
-            </tr>
-            <tr>
-              <td>Tofu</td>
-              <td class="right-align">16.4g</td>
-            </tr>
-            <tr>
-              <td>Green/Brown lentil</td>
-              <td class="right-align">10g</td>
-            </tr>
-            <tr>
-              <td>Kidney beans</td>
-              <td class="right-align">7.9g</td>
-            </tr>
-            <tr>
-              <td>Broccoli</td>
-              <td class="right-align">5.7g</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <p>"A vegetarian diet can easily meet human dietary protein requirements as long as energy needs are met and a
-            variety of foods are eaten...Vegetarians should obtain protein from a variety of plant sources, including
-            legumes, soy products, grains, nuts and seeds."</p>
-          <p>"Protein and vegetarian diets" Kate A Marsh, Elizabeth A Munn and Surinder K Baines MJA Open 2012; 1
-            Suppl 2: 7-10. doi: 10.5694/mjao11.11492
-          </p>
-        </div>
-      </section>
-      <section>
-        <h2>Further reading</h2>
-        <div>
-          <p><a href="http://www.onegreenplanet.org/natural-health/vegan-sources-of-protein/" target="_new">One Green
-            Planet - 25 delicious sources of vegan protein</a>.</p>
-          <p><a
-              href="https://www.vegansociety.com/resources/nutrition-and-health/vitamins-minerals-and-nutrients/protein"
-              target="_blank">Vegan Society protein info</a>.</p>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="protein">
+            <section>
+                <h2>Where do you get your Protein?</h2>
+                <div>
+                    Answers below.
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Protein per 100gs</th>
+                        </tr>
+                        <tr>
+                            <td>Seitan</td>
+                            <td class="right-align">74.9g</td>
+                        </tr>
+                        <tr>
+                            <td>TVP - soy mince</td>
+                            <td class="right-align">50g</td>
+                        </tr>
+                        <tr>
+                            <td>Tempeh</td>
+                            <td class="right-align">23.2g</td>
+                        </tr>
+                        <tr>
+                            <td>Tofu</td>
+                            <td class="right-align">16.4g</td>
+                        </tr>
+                        <tr>
+                            <td>Green/Brown lentil</td>
+                            <td class="right-align">10g</td>
+                        </tr>
+                        <tr>
+                            <td>Kidney beans</td>
+                            <td class="right-align">7.9g</td>
+                        </tr>
+                        <tr>
+                            <td>Broccoli</td>
+                            <td class="right-align">5.7g</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <p>"A vegetarian diet can easily meet human dietary protein requirements as long as energy needs are
+                        met and a
+                        variety of foods are eaten...Vegetarians should obtain protein from a variety of plant sources,
+                        including
+                        legumes, soy products, grains, nuts and seeds."</p>
+                    <p>"Protein and vegetarian diets" Kate A Marsh, Elizabeth A Munn and Surinder K Baines MJA Open
+                        2012; 1
+                        Suppl 2: 7-10. doi: 10.5694/mjao11.11492
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2>Further reading</h2>
+                <div>
+                    <p><a href="http://www.onegreenplanet.org/natural-health/vegan-sources-of-protein/" target="_new">One
+                        Green
+                        Planet - 25 delicious sources of vegan protein</a>.</p>
+                    <p><a
+                            href="https://www.vegansociety.com/resources/nutrition-and-health/vitamins-minerals-and-nutrients/protein"
+                            target="_blank">Vegan Society protein info</a>.</p>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="b12">
-      <section>
-        <h2>Do you need to supplement B12?</h2>
-        <div>
-          Answers below.
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <p>"Vitamin B12 is...a nutrient of potential concern for those following a vegetarian or vegan diet. Vegans,
-            and anyone who significantly limits intake of animal-based foods, require vitamin B12-fortified foods or
-            supplements."<span class="ref">1</span></p>
-          <p> "Vitamin B12 and vegetarian diets" Carol L Zeuschner, Bevan D Hokin, Kate A Marsh, Angela V Saunders,
-            Michelle A Reid and Melinda R Ramsay MJA Open 2012; 1 Suppl 2: 27-32. </p>
-        </div>
-      </section>
-      <section>
-        <h2>Further reading:</h2>
-        <div>
-          <p>
-          <ul>
-            <li>
-              <a href="https://www.vegansociety.com/resources/nutrition-and-health/vitamins-minerals-and-nutrients/vitamin-b12-your-key-facts/what-every-vegan-should-know-about-vitamin-b12">Vegan
-                Society: What every vegan should know about B12</a>
-            </li>
-          </ul>
-          </p>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="b12">
+            <section>
+                <h2>Do you need to supplement B12?</h2>
+                <div>
+                    Answers below.
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <p>"Vitamin B12 is...a nutrient of potential concern for those following a vegetarian or vegan diet.
+                        Vegans,
+                        and anyone who significantly limits intake of animal-based foods, require vitamin B12-fortified
+                        foods or
+                        supplements."<span class="ref">1</span></p>
+                    <p> "Vitamin B12 and vegetarian diets" Carol L Zeuschner, Bevan D Hokin, Kate A Marsh, Angela V
+                        Saunders,
+                        Michelle A Reid and Melinda R Ramsay MJA Open 2012; 1 Suppl 2: 27-32. </p>
+                </div>
+            </section>
+            <section>
+                <h2>Further reading:</h2>
+                <div>
+                    <p>
+                    <ul>
+                        <li>
+                            <a href="https://www.vegansociety.com/resources/nutrition-and-health/vitamins-minerals-and-nutrients/vitamin-b12-your-key-facts/what-every-vegan-should-know-about-vitamin-b12">Vegan
+                                Society: What every vegan should know about B12</a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="plants">
-      <section>
-        <h2>Don't plants have feelings?</h2>
-        <div>
-          Answers below.
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>Most creatures we eat are herbivorous so we save more plants by consuming them directly.</li>
-            <li>Studies show plants can respond to stimuli, however lacking a central nervous system and brain there is
-              no evidence they feel pain.
-            </li>
-            <li>The line between plants and animals is blurry. Mussels, sea anemones, mushrooms, all sit in the
-              middle. Ultimately our best scientific knowledge should be our guide here, erring on the side of
-              compassion.
-            </li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="plants">
+            <section>
+                <h2>Don't plants have feelings?</h2>
+                <div>
+                    Answers below.
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>Most creatures we eat are herbivorous so we save more plants by consuming them directly.
+                        </li>
+                        <li>Studies show plants can respond to stimuli, however lacking a central nervous system and
+                            brain there is
+                            no evidence they feel pain.
+                        </li>
+                        <li>The line between plants and animals is blurry. Mussels, sea anemones, mushrooms, all sit in
+                            the
+                            middle. Ultimately our best scientific knowledge should be our guide here, erring on the
+                            side of
+                            compassion.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="cows">
-      <section>
-        <h2>What would happen to all the cows?</h2>
-        <div>
-          Answers below
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>The breeding of farm animals is orchestrated by humans for maximum profitability, even where artificial insemination is not used.
-            </li>
-            <li>Within one generation, without this breeding, numbers would reduce dramatically.</li>
-            <li>If people wished, they would be able to maintain breeds of farm animals as companion animals.</li>
-            <li>Freed up land available for more crops, sanctuaries and reclamation by nature (perhaps with our help).</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <h2>Further reading</h2>
-        <div>
-          <ul>
-            <li>"Cattle Breeding Guide" LiveCorp/Meat Livestock Australia. Oct 2010.
-              https://www.livecorp.com.au/LC/files/e4/e4a91e28-4b11-45c2-bff4-db9d83faa555.pdf
-            </li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="cows">
+            <section>
+                <h2>What would happen to all the cows?</h2>
+                <div>
+                    Answers below
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>The breeding of farm animals is orchestrated by humans for maximum profitability, even where
+                            artificial insemination is not used.
+                        </li>
+                        <li>Within one generation, without this breeding, numbers would reduce dramatically.</li>
+                        <li>If people wished, they would be able to maintain breeds of farm animals as companion
+                            animals.
+                        </li>
+                        <li>Freed up land available for more crops, sanctuaries and reclamation by nature (perhaps with
+                            our help).
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Further reading</h2>
+                <div>
+                    <ul>
+                        <li>"Cattle Breeding Guide" LiveCorp/Meat Livestock Australia. Oct 2010.
+                            https://www.livecorp.com.au/LC/files/e4/e4a91e28-4b11-45c2-bff4-db9d83faa555.pdf
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="farmers">
-      <section>
-        <h2>What would happen to all the farmers?</h2>
-        <div>
-          Answers below
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>They would switch to growing alternative more ethical foods.</li>
-            <li>Industries often end for many reasons, the jobs involved are usually distributed elsewhere.</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="farmers">
+            <section>
+                <h2>What would happen to all the farmers?</h2>
+                <div>
+                    Answers below
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>They would switch to growing alternative more ethical foods.</li>
+                        <li>Industries often end for many reasons, the jobs involved are usually distributed
+                            elsewhere.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="tofurky">
-      <section>
-        <h2>Why would vegans eat something which looks like meat?</h2>
-        <div>
-          Answers below
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>Many vegans don't, though many do as they consider any food produced ethically to be ethical.</li>
-            <li>Mock foods provide familiar ingredients for people who have grown up eating a certain way.</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="tofurky">
+            <section>
+                <h2>Why would vegans eat something which looks like meat?</h2>
+                <div>
+                    Answers below
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>Many vegans don't, though many do as they consider any food produced ethically to be
+                            ethical.
+                        </li>
+                        <li>Mock foods provide familiar ingredients for people who have grown up eating a certain way.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="humans">
-      <section>
-        <h2>Why should we help animals when humans are suffering?</h2>
-        <div>
-          Answers below
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>Being vegan and advocating for veganism helps achieve tangible change towards a more sustainable and socially equitable world</li>
-            <li>No one would ask why we were helping people with severe intellectual disabilities instead of those with high IQs.</li>
-            <li>Most vegans have a wide circle of compassion.</li>
-            <li>Many people do nothing for humans or animals, so why criticise people doing something positive.</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="humans">
+            <section>
+                <h2>Why should we help animals when humans are suffering?</h2>
+                <div>
+                    Answers below
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>Being vegan and advocating for veganism helps achieve tangible change towards a more
+                            sustainable and socially equitable world
+                        </li>
+                        <li>No one would ask why we were helping people with severe intellectual disabilities instead of
+                            those with high IQs.
+                        </li>
+                        <li>Most vegans have a wide circle of compassion.</li>
+                        <li>Many people do nothing for humans or animals, so why criticise people doing something
+                            positive.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="chickens">
-      <section>
-        <h2>How do you feel about keeping chickens in the backyard?</h2>
-        <div>
-          Answers below
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>It's likely these chickens will have a better quality of life than those on farms, but it's also possible they won't.</li>
-            <li>The amount of eggs that hens produce is not compatible with their welfare.</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="chickens">
+            <section>
+                <h2>How do you feel about keeping chickens in the backyard?</h2>
+                <div>
+                    Answers below
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>It's likely these chickens will have a better quality of life than those on farms, but it's
+                            also possible they won't.
+                        </li>
+                        <li>The amount of eggs that hens produce is not compatible with their welfare.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="natural">
-      <section>
-        <h2>Meat eating is natural</h2>
-        <div>
-          Answers below
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>Naturalistic fallacy - just because something is natural, doesn't make it ethical.</li>
-            <li>Factory farming where 99% of meat comes from is about as unnatural as it gets.</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="natural">
+            <section>
+                <h2>Meat eating is natural</h2>
+                <div>
+                    Answers below
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>Naturalistic fallacy - just because something is natural, doesn't make it ethical.</li>
+                        <li>Factory farming where 99% of meat comes from is about as unnatural as it gets.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="yours">
-      <section>
-        <h2>Now your questions!</h2>
-        <div>
-          <ul>
-            <li>Any questions you often get asked you'd like answers to?</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="yours">
+            <section>
+                <h2>Now your questions!</h2>
+                <div>
+                    <ul>
+                        <li>Any questions you often get asked you'd like answers to?</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/collage.png" id="limits">
-      <section>
-        <h2>Limits of rational argumentation</h2>
-        <div>
-          Answers below
-        </div>
-      </section>
-      <section>
-        <h2>Answers</h2>
-        <div>
-          <ul>
-            <li>Unlikely we will change someone's mind in a single discussion.</li>
-            <li>The idea that if we have truth on our side and provide an irrefutable argument for that truth,
-              people
-              will change, is optimistic at best.</li>
-            <li>People will feel their ethics are being attacked, which they are, and will become defensive.</li>
-            <li>Thus it is important for us to remember to bring our other social skills to the table when discussing ethical considerations.</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/collage.png" id="limits">
+            <section>
+                <h2>Limits of rational argumentation</h2>
+                <div>
+                    Answers below
+                </div>
+            </section>
+            <section>
+                <h2>Answers</h2>
+                <div>
+                    <ul>
+                        <li>Unlikely we will change someone's mind in a single discussion.</li>
+                        <li>The idea that if we have truth on our side and provide an irrefutable argument for that
+                            truth,
+                            people
+                            will change, is optimistic at best.
+                        </li>
+                        <li>People will feel their ethics are being attacked, which they are, and will become
+                            defensive.
+                        </li>
+                        <li>Thus it is important for us to remember to bring our other social skills to the table when
+                            discussing ethical considerations.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-    <section data-background-image="./images/buddha.jpg" id="exceptionalism" class="highlight">
-      <section>
-        <h2>Thanks and ahimsa</h2>
-        <div>
-          <p><a href="http://camerongreen.org/veganbingo">camerongreen.org/veganbingo</a></p>
-          <p><a href="http://camerongreen.org">camerongreen.org</a></p>
-          <p>Inspired by: <a href="https://youtu.be/dv_SuTUHlZI">Arguments Against Animal Rights: Jens Tuider</a>
-          </p>
-        </div>
-      </section>
-    </section>
+        <section data-background-image="./images/buddha.jpg" id="exceptionalism" class="highlight">
+            <section>
+                <h2>Thanks and ahimsa</h2>
+                <div>
+                    <p><a href="http://camerongreen.org/veganbingo">camerongreen.org/veganbingo</a></p>
+                    <p><a href="http://camerongreen.org">camerongreen.org</a></p>
+                    <p>Inspired by: <a href="https://youtu.be/dv_SuTUHlZI">Arguments Against Animal Rights: Jens
+                        Tuider</a>
+                    </p>
+                </div>
+            </section>
+        </section>
 
-    <div class="footer">
-      i@camerongreen.org
+        <div class="footer">
+            i@camerongreen.org
+        </div>
+
     </div>
-  </div>
 </div>
 
-<!-- build:js veganfaq.min.js -->
-<script src="./bower_components/reveal.js/js/reveal.js"></script>
-<script src="./js/veganfaq.js"></script>
-<!--  /build -->
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+  // More info about initialization & config:
+  // - https://revealjs.com/initialization/
+  // - https://revealjs.com/config/
+  Reveal.initialize({
+    hash: true,
 
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+  });
+</script>
 </body>
 </html>
